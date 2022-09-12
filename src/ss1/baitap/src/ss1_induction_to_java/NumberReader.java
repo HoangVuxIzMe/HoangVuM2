@@ -1,4 +1,4 @@
-package ss1;
+package ss1_induction_to_java;
 
 import java.util.Scanner;
 

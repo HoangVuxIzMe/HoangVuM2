@@ -1,4 +1,4 @@
-package ss3;
+package ss3_array;
 
 import java.util.Scanner;
 

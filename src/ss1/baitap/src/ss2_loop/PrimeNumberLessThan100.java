@@ -1,4 +1,4 @@
-package ss2;
+package ss2_loop;
 
 public class PrimeNumberLessThan100 {
     public static void main(String[] args) {

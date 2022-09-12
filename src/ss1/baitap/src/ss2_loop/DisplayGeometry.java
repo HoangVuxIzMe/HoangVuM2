@@ -1,4 +1,4 @@
-package ss2;
+package ss2_loop;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package ss4;
+package ss4_class;
 
 import java.util.Scanner;
 
