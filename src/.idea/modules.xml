@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/Module2/Module2.iml" filepath="$PROJECT_DIR$/Module2/Module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/src.iml" filepath="$PROJECT_DIR$/.idea/src.iml" />
       <module fileurl="file://$PROJECT_DIR$/ss1/ss1.iml" filepath="$PROJECT_DIR$/ss1/ss1.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Module2/thuc_hanh/thuc_hanh.iml" filepath="$PROJECT_DIR$/Module2/thuc_hanh/thuc_hanh.iml" />
+=======
+>>>>>>> origin/main
     </modules>
   </component>
 </project>
