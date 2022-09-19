@@ -1,6 +1,6 @@
-package ss7_abstract_class_interface.resizeable;
+package ss7_abstract_class_interface.colorable;
 
-public class Square extends Shape {
+public class Square extends Shape{
     private double side = 1.0;
 
     public Square() {
@@ -36,18 +36,11 @@ public class Square extends Shape {
         return "A Square with radius="
                 + getSide()
                 + ", which is a subclass of "
-                + super.toString()
-                + "Area= "
-                + getArea()
-                + ", Perimeter= "
-                + getPerimeter()
-                + ", Color: "
-                + getColor()
-                + "\n";
+                + super.toString();
     }
 
     @Override
-    public void resize(double percent) {
-        this.side *= (percent / 200);
+    public void howToColor() {
+        System.out.println("Square: Fill the Square");
     }
 }
