@@ -37,10 +37,13 @@ public class Circle extends Shape {
                 + getRadius()
                 + ", which is a subclass of "
                 + super.toString()
-                + ", Area= "
+                + "Area= "
                 + getArea()
                 + ", Perimeter= "
-                + getPerimeter();
+                + getPerimeter()
+                + ", Color: "
+                + getColor()
+                + "\n";
     }
 
     public void resize(double percent) {

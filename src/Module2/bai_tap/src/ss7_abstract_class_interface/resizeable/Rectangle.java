@@ -50,10 +50,13 @@ public class Rectangle extends Shape {
                 + getLength()
                 + ", which is a subclass of "
                 + super.toString()
-                + ", Area= "
+                + "Area= "
                 + getArea()
                 + ", Perimeter= "
-                + getPerimeter();
+                + getPerimeter()
+                + ", Color: "
+                + getColor()
+                + "\n";
     }
 
     @Override

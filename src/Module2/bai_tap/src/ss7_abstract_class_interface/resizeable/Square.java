@@ -37,10 +37,13 @@ public class Square extends Shape {
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString()
-                + ", Area= "
+                + "Area= "
                 + getArea()
                 + ", Perimeter= "
-                + getPerimeter();
+                + getPerimeter()
+                + ", Color: "
+                + getColor()
+                + "\n";
     }
 
     @Override
