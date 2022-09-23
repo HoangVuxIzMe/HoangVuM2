@@ -33,7 +33,7 @@ public abstract class Shape implements Colorable {
         return "a Shape with color of "
                 + getColor()
                 + " and "
-                + (isFilled() ? "filled\n" : "not filled\n");
+                + (isFilled() ? "filled" : "not filled");
     }
 
     public static void printShape(Shape[] shapes) {
@@ -42,7 +42,7 @@ public abstract class Shape implements Colorable {
         }
     }
 
-    public static boolean isColorable(Shape shapes) {
-        return Colorable.class.isInstance(shapes);
-    }
+//    public static boolean isColorable(Shape shapes) {
+//        return Colorable.class.isInstance(shapes);
+//    }
 }

@@ -7,15 +7,11 @@ public class RunShape {
         shapes[0] = new Circle(x, "Yellow", false);
         shapes[1] = new Rectangle(x, x, "Blue", true);
         shapes[2] = new Square(x, "Red", true);
-
-        for (Shape a : shapes){
-            System.out.println(a);
-        }
-//        for (Shape a : shapes) {
-//            if (x instanceof Colorable) {
-//                ((Colorable) x).howToColor();
-//            }
-//        }
         Shape.printShape(shapes);
+        for (Shape a : shapes) {
+            if (a != null) {
+                ((Colorable) a).howToColor();
+            }
+        }
     }
 }
