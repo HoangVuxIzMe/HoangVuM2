@@ -18,54 +18,54 @@ public class Test {
                             "6. Sắp xếp sản phẩm tăng dần, giảm dần theo giá\n" +
                             "0. Thoát"
             );
-            System.out.println("Vui lòng chọn chực năng: ");
+            System.out.print("Vui lòng chọn chực năng: ");
             option = sc.nextInt();
             sc.nextLine();
 
             switch (option) {
                 case 1:
-                    System.out.println("Nhập mã sẩn phẩm :");
+                    System.out.print("Nhập mã sẩn phẩm: ");
                     String id = sc.nextLine();
 
-                    System.out.println("Nhập tên sản phẩm : ");
+                    System.out.print("Nhập tên sản phẩm : ");
                     String product = sc.nextLine();
 
-                    System.out.println("Nhập giá sản phẩm: ");
+                    System.out.print("Nhập giá sản phẩm: ");
                     double price = sc.nextDouble();
 
                     Product products = new Product(id, price, product);
                     productList.addProduct(products);
                     break;
                 case 2:
-                    System.out.println("Nhập mã ID cần sửa: ");
+                    System.out.print("Nhập mã ID cần sửa: ");
                     String newId = sc.nextLine();
                     if (productList.checkID(newId) != -1) {
-                        System.out.println("Nhập tên sản phẩm mới");
+                        System.out.print("Nhập tên sản phẩm mới: ");
                         String newNameProduct = sc.nextLine();
 
-                        System.out.println("Nhập giá sản phẩm mới");
+                        System.out.print("Nhập giá sản phẩm mới: ");
                         double newPrice = sc.nextDouble();
 
                         Product newProduct = new Product(newId, newPrice, newNameProduct);
                         productList.editProduct(productList.checkID(newId), newProduct);
                     } else {
-                        System.out.println("Không tồn tại ID Trên");
+                        System.out.print("Không tồn tại ID trên");
                     }
                     break;
                 case 3:
-                    System.out.println("Nhập mã ID cần xóa: ");
+                    System.out.print("Nhập mã ID cần xóa: ");
                     String removeId = sc.nextLine();
                     int index = productList.checkID(removeId);
                     if (index != -1) {
                         productList.removeProduct(index);
                     } else {
-                        System.out.println("Mã ID không tồn tại");
+                        System.out.print("Mã ID không tồn tại");
                     }
                 case 4:
                     productList.display();
                     break;
                 case 5:
-                    System.out.println("Nhập tên sản phẩm cần tìm : ");
+                    System.out.print("Nhập tên sản phẩm cần tìm : ");
                     String name = sc.nextLine();
 
                     productList.searchProduct(name);
