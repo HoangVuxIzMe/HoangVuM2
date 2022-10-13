@@ -1,4 +1,4 @@
-package ss13_sort_operator;
+package ss13_search_operator;
 
 import java.util.LinkedList;
 import java.util.Scanner;
