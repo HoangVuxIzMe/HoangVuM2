@@ -32,7 +32,6 @@ public class ReadFile {
                 buffered.write(national.getInfor());
                 buffered.newLine();
             }
-//            buffered.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
