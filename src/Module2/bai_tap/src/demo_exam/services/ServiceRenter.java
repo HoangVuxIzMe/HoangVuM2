@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ServiceRenter implements ServiceAccount {
-    List<AccountRenter> accountRenterList = new LinkedList<>();
+    private static List<AccountRenter> accountRenterList = new LinkedList<>();
     Scanner sc = new Scanner(System.in);
 
     @Override

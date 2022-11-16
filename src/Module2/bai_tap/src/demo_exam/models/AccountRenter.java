@@ -80,7 +80,8 @@ public class AccountRenter extends Account {
                 '.';
     }
 
+    @Override
     public String getInfo() {
-        return super.getInfo() + getMinArea() + "," + getMaxArea() + "," + getMinMoney() + "," + getMaxMoney();
+        return super.getInfo() + "," + getMinArea() + "," + getMaxArea() + "," + getMinMoney() + "," + getMaxMoney();
     }
 }

@@ -70,6 +70,6 @@ public class Account implements Serializable {
     }
 
     public String getInfo() {
-        return getIdPersonal() + "," + getFullName() + "," + getDate() + "," + getGender() + "," + isStatus() + ",";
+        return getIdPersonal() + "," + getFullName() + "," + getDate() + "," + getGender() + "," + isStatus();
     }
 }

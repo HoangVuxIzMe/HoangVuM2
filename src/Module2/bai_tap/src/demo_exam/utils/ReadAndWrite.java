@@ -22,11 +22,11 @@ public class ReadAndWrite {
     }
 
     public static List<AccountLessor> readFileLessor(String fileName) {
-        List<AccountLessor> lessorList = new LinkedList<>();
+        List<AccountLessor> lessorList = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String line = null;
             while ((line = reader.readLine()) != null) {
-                if (line.trim().equals("")) {
+                if (line.trim().equals(" ")) {
                     continue;
                 }
                 lessorList.add(new AccountLessor(line));

@@ -1,6 +1,6 @@
 package demo_exam.models;
 
-public class AccountLessor extends Account{
+public class AccountLessor extends Account implements Comparable<AccountLessor>{
     private float areaUse;
     private String addressRental;
     private int maxPerson;
@@ -79,7 +79,18 @@ public class AccountLessor extends Account{
                 ", Money Rental=" + moneyRental +
                 '.';
     }
-    public String getInfo(){
-        return super.getInfo() + getAreaUse() + "," + getAddressRental() + "," + getMaxPerson() + "," + getMoneyRental();
+
+    @Override
+    public String getInfo() {
+        return super.getInfo() + "," + getAreaUse() + "," + getAddressRental() + "," + getMaxPerson() + "," + getMoneyRental();
     }
+
+    @Override
+    public int compareTo(AccountLessor accountLessor) {
+        if (this.getFullName().equals(accountLessor.getFullName())) {
+            return -this.getDate().compareTo(accountLessor.getDate());
+        }
+        return this.getFullName().compareTo(accountLessor.getFullName());
+    }
+
 }
